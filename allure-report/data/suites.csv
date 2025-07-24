@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6579","fill the form with valid details","chromium","Fri Jul 25 00:06:31 IST 2025","passed","Fri Jul 25 00:06:37 IST 2025","","task2.spec.ts","",""
+"","3806","has title","chromium","Fri Jul 25 00:06:31 IST 2025","passed","Fri Jul 25 00:06:35 IST 2025","","example.spec.ts","",""
+"","4161","get started link","chromium","Fri Jul 25 00:06:31 IST 2025","passed","Fri Jul 25 00:06:35 IST 2025","","example.spec.ts","",""
+"","11458","Login test","chromium","Fri Jul 25 00:06:31 IST 2025","passed","Fri Jul 25 00:06:42 IST 2025","","task1.spec.ts","",""

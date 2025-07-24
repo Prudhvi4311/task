@@ -1,12 +1,16 @@
-import { LoginPage } from "../pages/LoginPage"
 import { test, expect, describe } from "../fixtures/myfixtures"
-//import {test,expect} from "@playwright/test"
+import { testConfig } from "../test.config";
+
+let config : testConfig;
+
+test.beforeEach( async ({page})=>{
+    config = new testConfig();
+    await page.goto(config.appurl);
+})
 
 test("Login test", async ({ page, loginpage }) => {
-    //load the app
-    await page.goto("https://demoqa.com/login", { waitUntil: "domcontentloaded" });
     //by using fixture created a login page object calling login function from loginpage class
-    loginpage.loginapp('testuser1', 'Test@1234');
+    loginpage.loginapp(config.username, config.password);
     console.log("Login is successfull");
     //verfiy the username after logging
     const usernametext = await page.locator("label[id='userName-value']").textContent();

@@ -1,0 +1,15 @@
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "1234567890",
+    "address1": "123 Test Street",
+    "address2": "123 Test Street",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "zip": "500072",
+    "website": "https://example.com",
+    "hosting": "yes",             
+    "comment": "This is a test submission.",
+    "country": "India"
+}
