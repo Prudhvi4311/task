@@ -6,7 +6,7 @@ test("fill the form with valid details", async ({ page }) => {
 
   await page.locator("#name").fill(formdata.firstName);
   await page.locator("input[type='email'][name='email'][id='inputEmail4']").fill(formdata.email);
-  await page.getByPlaceholder("Password").fill("Hello@123"); 
+  await page.getByPlaceholder("Password").fill("Hello@123");
   await page.getByPlaceholder("Company").fill("Benefithub");
   await page.getByPlaceholder("Website").fill(formdata.website);
   
