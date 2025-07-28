@@ -8,9 +8,9 @@ test.beforeEach( async ({page})=>{
     await page.goto(config.appurl);
 })
 
-test("Login test", async ({ page, loginpage }) => {
+test("Login test", async ({ page, lp }) => {
     //by using fixture created a login page object calling login function from loginpage class
-    loginpage.loginapp(config.username, config.password);
+    lp.loginapp(config.username, config.password);
     console.log("Login is successfull");
     await page.screenshot({path:`screenshots/userName_${Date.now()}.png`});
     //verfiy the username after logging

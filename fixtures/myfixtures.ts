@@ -3,13 +3,13 @@ import { LoginPage } from "../pages/LoginPage"
 
 
 type myfixture= {
-    loginpage:LoginPage
+    lp:LoginPage
 }
 
 export const test = base.extend<myfixture>({
-    loginpage : async ({page}, use)=>{
-        const lp = new LoginPage(page);
-        await use(lp);
+    lp : async ({page}, use)=>{
+        const loginpage = new LoginPage(page);
+        await use(loginpage);
     }
 })
 
